@@ -1,0 +1,67 @@
+body, section{
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    background-image: url("./src/basementGround.png");
+    font-size: large;
+    color: #ffffff;
+}
+section{
+    margin: 5%;
+    width: 90%;
+}
+header{
+    margin: 1% 15%;
+    width: 70%;
+    font-size: larger;
+    div{
+        background-color: black;
+        margin: 1% 15%;
+        width: 70%;
+        img{
+            position: absolute;
+            top: 13%;
+            left: 55%;
+        }
+    }
+}
+ul{
+    list-style: none;
+    margin: 5%;
+}
+a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+a:hover{color: red;}
+p{width: 90%;}
+h5, .outlineStyle{
+    outline-style: ridge;
+    outline-width: 5px;
+    outline-color: #ffffff;
+}
+h5, .padding{padding: 1%;}
+.row, .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.row{
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media screen and (max-height: 1480px) and (max-width: 1560px){
+    header div img{
+        top: 7%;
+        left: 55%;
+    }
+}
+@media screen and (max-width: 850px){
+    section{
+        margin: 0;
+        width: 100%;
+    }
+    header div img{display: none;}
+    .row{flex-direction: column;}
+}
